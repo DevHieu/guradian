@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 5em;
+  .img {
+    position: absolute;
+    width: 100% !important;
+    background-color: #000;
+    opacity: 0.2;
+    -webkit-mask-size: automatic;
+    -webkit-mask-image: -webkit-gradient(
+      linear,
+      center top,
+      center bottom,
+      color-stop(1, rgba(0, 0, 0, 0)),
+      color-stop(0, rgba(0, 0, 0, 1))
+    );
+  }
+  .logo {
+    width: 55em;
+  }
+  .BottomBtn {
+    position: absolute;
+    margin-top: 21em;
+    font-size: 30px;
+    border: 2px solid #dfdfdfdf;
+    padding: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover {
+      color: #fff;
+      border: 2px solid #fff;
+    }
+    &:active {
+      color: #ffbb14;
+      border: 2px solid #ffbb14;
+    }
+  }
+}
