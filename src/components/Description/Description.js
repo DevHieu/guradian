@@ -1,9 +1,3 @@
-// import React, { useState } from "react";
-// import { Fade } from "react-slideshow-image";
-import { FaArrowLeft } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa";
-
-// import "react-slideshow-image/dist/styles.css";
 import styles from "./Description.module.scss";
 
 // //import image
@@ -11,15 +5,12 @@ import img1 from "../../img/cyberpunk.jpg";
 import img2 from "../../img/reddead.jpg";
 import img3 from "../../img/gtav.jpg";
 
-import React, { useRef } from "react";
+import React from "react";
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import "./styles.css";
 
 const FadeExample = () => {
-  const sliderRef = useRef(null);
-  console.log(sliderRef);
-
   const indicators = (index) => (
     <div className={styles.indicators}>{index + 1}</div>
   );
@@ -59,7 +50,6 @@ const FadeExample = () => {
   return (
     <div className={styles.wrapper}>
       <Fade
-        ref={sliderRef}
         cssClass={styles.SlideContainer}
         indicators={indicators}
         transitionDuration={200}
@@ -67,7 +57,7 @@ const FadeExample = () => {
         {data.map((value, index) => (
           <div key={index} className={styles.slide}>
             <div>
-              <img src={value.src} />
+              <img src={value.src} alt="img" />
             </div>
             <p>{value.describe}</p>
           </div>
