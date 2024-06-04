@@ -1,14 +1,14 @@
 .wrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-
-  padding-top: 5em;
+  width: 100% !important;
+  height: 100%;
   .img {
     position: absolute;
     width: 100% !important;
-    background-color: #000;
-    opacity: 0.2;
+    opacity: 0.8;
+    z-index: -10;
     -webkit-mask-size: automatic;
     -webkit-mask-image: -webkit-gradient(
       linear,
@@ -17,26 +17,47 @@
       color-stop(1, rgba(0, 0, 0, 0)),
       color-stop(0, rgba(0, 0, 0, 1))
     );
-    z-index: -10;
   }
-  .logo {
-    width: 55em;
+  .LogoContainer {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo {
+      width: 55em;
+    }
+  }
+
+  & > p {
+    font-size: 35px;
+  }
+
+  .downloads {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .downloadBtn {
+      color: black;
+      background-image: url(../../../img/Button1.png);
+      background-repeat: no-repeat;
+      width: 400px;
+      height: 90px;
+      text-align: center;
+      & > p {
+        font-size: 26px;
+      }
+    }
   }
   .BottomBtn {
-    position: absolute;
-    margin-top: 21em;
-    font-size: 30px;
-    border: 2px solid #dfdfdfdf;
-    padding: 7px;
-    border-radius: 50%;
+    background: transparent;
+    outline: none;
+    border: none;
+    margin-top: 3em;
     cursor: pointer;
-    &:hover {
-      color: #fff;
-      border: 2px solid #fff;
-    }
-    &:active {
-      color: #ffbb14;
-      border: 2px solid #ffbb14;
+    & > img {
+      width: 25px;
     }
   }
 }

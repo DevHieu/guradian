@@ -1,6 +1,9 @@
 import React from "react";
 import YouTube from "react-youtube";
 import styles from "./TrailerVideo.module.scss";
+import MonsterBackground from "../../img/MonsterBackground.png";
+import Border from "../../img/VideoBorder.png";
+import SideBorder from "../../img/SideBorder.png";
 
 export default function TrailerVideo() {
   const opts = {
@@ -10,7 +13,13 @@ export default function TrailerVideo() {
 
   return (
     <div className={styles.wrapper}>
-      <h1>GAME TRAILER</h1>
+      <img
+        src={MonsterBackground}
+        alt="background"
+        className={styles.background}
+      />
+      <img src={Border} alt="border" />
+      <img src={SideBorder} alt="side-border" />
       <YouTube videoId="dQw4w9WgXcQ" opts={opts} />
     </div>
   );

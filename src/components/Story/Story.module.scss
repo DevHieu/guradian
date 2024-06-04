@@ -1,0 +1,44 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30em;
+  .background {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    mask-image: linear-gradient(transparent, black, transparent);
+    z-index: -10;
+    opacity: 0.4;
+  }
+  .border {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+  }
+  .left {
+    width: 60%;
+    .title {
+      font-size: 40px;
+      transform: translateY(-30px);
+    }
+    .image {
+      width: 85%;
+      transform: translate(25px, -50px);
+    }
+  }
+  .right {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+    & > span {
+      text-align: left;
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+}

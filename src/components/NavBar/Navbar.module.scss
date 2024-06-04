@@ -1,6 +1,6 @@
 .wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   background-color: rgba(2, 2, 2, 0.93);
@@ -9,8 +9,8 @@
   backdrop-filter: blur(10px);
   z-index: 10;
   .logo {
-    width: 10em;
-    height: 100%;
+    width: 16rem;
+    margin-left: 1rem;
     cursor: pointer;
   }
   .list {
@@ -20,20 +20,51 @@
       padding: 1.8em 1em;
       display: list-item;
       cursor: pointer;
-      border-bottom: 2px solid #020202;
+      color: #fff;
+      border-bottom: 1px solid #fff;
       &:hover {
         transition: border-bottom 0.3s linear;
-        border-bottom: 2px solid #fff;
+        color: #eaa053;
       }
       &:active {
-        color: #ffbb14;
-        border-bottom: 2px solid #ffbb14;
+        border-bottom: 2px solid #eaa053;
         transition: none !important;
       }
     }
-    .active {
-      color: #fff;
-      border-bottom: 2px solid #fff;
+  }
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin-left: 3rem;
+    .signin {
+      width: 12rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      .text {
+        padding: 5px;
+        font-size: 17px;
+      }
+      .img {
+        width: 40px;
+      }
+    }
+    .download {
+      background-color: #eaa053;
+      color: black;
+      height: 100%;
+      width: 12rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 27px;
+      cursor: pointer;
+      &:hover {
+        background-color: rgb(240, 148, 51);
+      }
     }
   }
 }

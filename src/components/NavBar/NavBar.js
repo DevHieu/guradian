@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Navbar.module.scss";
 import logo from "../../img/logo.png";
+import { MdAccountCircle } from "react-icons/md";
 
 export default function NavBar() {
   const logoClick = () => {
@@ -23,6 +24,13 @@ export default function NavBar() {
           <li className={styles.Itemlist}>Cẩm nang ness</li>
           <li className={styles.Itemlist}>Về chúng tôi</li>
         </ul>
+        <div className={styles.right}>
+          <div className={styles.signin}>
+            <p className={styles.text}>Đăng nhập</p>
+            <MdAccountCircle size={40} />
+          </div>
+          <div className={styles.download}>Tải Game</div>
+        </div>
       </div>
       <div className={styles.empty}></div>
     </div>

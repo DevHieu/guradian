@@ -1,17 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
+@font-face {
+  font-family: "UTM Aircona";
+  src: local("UTM Aircona"), url(./fonts/UTM_Aircona.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "cour";
+  src: local("cour"), url(./fonts/cour.ttf) format("truetype");
+}
+
 body {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   background-color: #121212;
-  color: #dfdfdfdf;
+  color: white;
   margin: 0;
   font-size: 18px;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "UTM Aircona", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+}
+
+span {
+  font-family: "cour", sans-serif;
 }
 
 code {
@@ -30,10 +44,10 @@ code {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ffbb14;
+  background: #eaa053;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #daa114;
+  background: #eaa053;
 }
