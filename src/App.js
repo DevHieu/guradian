@@ -4,7 +4,7 @@ import NavBar from "./components/NavBar/NavBar.js";
 import TrailerVideo from "./components/TrailerVideo/TrailerVideo.js";
 import Description from "./components/Description/Description.js";
 import Story from "./components/Story/Story.js";
-import Character from "./components/Character/Character.js";
+import CharSkill from "./components/CharSkill/CharSkill.js";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Header />
       <TrailerVideo />
       <Story />
-      <Character />
+      <CharSkill />
     </div>
   );
 }
