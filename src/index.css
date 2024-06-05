@@ -26,6 +26,14 @@ body {
 
 span {
   font-family: "cour", sans-serif;
+  z-index: 100;
+}
+
+a {
+  font-family: "cour", sans-serif;
+  z-index: 100;
+  color: white;
+  text-decoration: none;
 }
 
 code {

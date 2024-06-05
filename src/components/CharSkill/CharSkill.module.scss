@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30em;
+  margin-bottom: 21em;
   .background {
     position: absolute;
     width: 100%;
@@ -56,17 +56,22 @@
         height: 80px;
         border: 1px solid white;
         transition: transform 0.1s linear;
+        cursor: pointer;
         &:hover {
           transform: scale(120%);
         }
       }
     }
     .bottom {
-      width: 43.5rem;
-      height: 28rem;
+      width: 682px;
+      height: 440px;
       background: rgba(255, 255, 255, 0.3);
-      transform: translate(30px, 50px);
       text-align: center;
+      transform: translate(-8px, 82px);
+      transition: transform 0.2s ease-in-out;
+      &:hover {
+        transform: translate(20px, 60px);
+      }
       .list {
         list-style: none;
         text-align: left;

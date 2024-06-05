@@ -26,6 +26,7 @@
     align-items: center;
     .logo {
       width: 55em;
+      cursor: pointer;
     }
   }
 
@@ -38,6 +39,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    & > a {
+      margin: 0 15px;
+      transition: transform 0.1s linear;
+      &:hover {
+        transform: scale(120%);
+      }
+    }
     .downloadBtn {
       color: black;
       background-image: url(../../../img/Button1.png);
@@ -45,8 +53,14 @@
       width: 400px;
       height: 90px;
       text-align: center;
+      transition: all 0.2s linear;
+      cursor: pointer;
       & > p {
+        transition: color 0.2s linear;
         font-size: 26px;
+      }
+      &:hover > p {
+        color: #e78e2e;
       }
     }
   }
@@ -56,8 +70,25 @@
     border: none;
     margin-top: 3em;
     cursor: pointer;
+    animation: Down 0.8s infinite;
     & > img {
       width: 25px;
+      transition: transform 0.1s linear;
     }
+    // &:hover > img {
+    //   transform: scale(120%);
+    // }
+  }
+}
+
+@keyframes Down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

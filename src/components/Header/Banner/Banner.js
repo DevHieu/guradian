@@ -2,11 +2,11 @@
 import BannerUrl from "../../../img/banner.png";
 import GameLogo from "../../../img/MainTitle.png";
 import arrow from "../../../img/ArrowScrollDown.png";
-import button1 from "../../../img/Button1.png";
+// import button1 from "../../../img/Button1.png";
 import PlayBtn from "../../../img/PlayBtn.png";
 
 import styles from "./Banner.module.scss";
-import { FaArrowDown } from "react-icons/fa";
+// import { FaArrowDown } from "react-icons/fa";
 
 export default function Banner() {
   const ScroolBottom = () => {
@@ -28,7 +28,13 @@ export default function Banner() {
         <div className={styles.downloadBtn}>
           <p>TẢI GÓI PC</p>
         </div>
-        <img src={PlayBtn} alt="play" />
+        <a
+          href="https://www.youtube.com/watch?v=nwuW98yLsgY&t=6s"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={PlayBtn} alt="play" className="" />
+        </a>
         <div className={styles.downloadBtn}>
           <p>TẢI XUỐNG KHÁC</p>
         </div>

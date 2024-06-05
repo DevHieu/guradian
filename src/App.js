@@ -6,6 +6,7 @@ import Description from "./components/Description/Description.js";
 import Story from "./components/Story/Story.js";
 import CharSkill from "./components/CharSkill/CharSkill.js";
 import Guild from "./components/Guild/Guild.js";
+import Footer from "./components/Footer/Footer.js";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Story />
       <CharSkill />
       <Guild />
+      <Footer />
     </div>
   );
 }

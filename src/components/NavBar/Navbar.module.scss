@@ -3,11 +3,11 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  background-color: rgba(2, 2, 2, 0.93);
+  background-color: rgba(2, 2, 2, 0.85);
   height: 5em;
   width: 100%;
   backdrop-filter: blur(10px);
-  z-index: 100;
+  z-index: 1000;
   .logo {
     width: 16rem;
     margin-left: 1rem;
@@ -44,12 +44,16 @@
       justify-content: center;
       align-items: center;
       color: white;
+      cursor: pointer;
       .text {
         padding: 5px;
         font-size: 17px;
       }
       .img {
         width: 40px;
+      }
+      &:hover {
+        color: #eaa053;
       }
     }
     .download {
