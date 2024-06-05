@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./CharSkill.module.scss";
+import ListItems from "../ListItems";
 
 import background from "../../img/CloundBackground.png";
 import SkillBorder from "../../img/SkillBorder.png";
@@ -30,18 +31,9 @@ export default function CharSkill() {
         </div>
         <div className={styles.bottom}>
           <ul className={styles.list}>
-            <li className={styles.list_items}>
-              <img src={star} alt="dots" className={styles.marker} />
-              <span>Game hơi dễ</span>
-            </li>
-            <li className={styles.list_items}>
-              <img src={star} alt="dots" className={styles.marker} />
-              <span>Đồ họa như free fire</span>
-            </li>
-            <li className={styles.list_items}>
-              <img src={star} alt="dots" className={styles.marker} />
-              <span>Âm thanh như nhạc năm 80s</span>
-            </li>
+            <ListItems text="Game hơi dễ" />
+            <ListItems text="Đồ họa như free fire" />
+            <ListItems text="Âm thanh như nhạc năm 80s" />
           </ul>
         </div>
       </div>

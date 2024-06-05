@@ -1,0 +1,15 @@
+.list_items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  gap: 24px;
+  .marker {
+    width: 40px;
+  }
+  & > span {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+  }
+}
