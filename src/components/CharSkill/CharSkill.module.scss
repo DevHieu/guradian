@@ -60,6 +60,10 @@
         &:hover {
           transform: scale(120%);
         }
+        & > img {
+          width: 80px;
+          height: 80px;
+        }
       }
     }
     .bottom {

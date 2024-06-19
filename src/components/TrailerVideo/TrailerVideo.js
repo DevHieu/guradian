@@ -18,7 +18,7 @@ export default function TrailerVideo() {
         className={styles.background}
       />
       <img src={Border} alt="border" />
-      <YouTube videoId="dQw4w9WgXcQ" opts={opts} />
+      <YouTube videoId="u4dVrvreos8" opts={opts} />
     </div>
   );
 }
