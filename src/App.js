@@ -18,6 +18,7 @@ function App() {
       <CharSkill />
       <Guild />
       <Footer />
+      <Description />
     </div>
   );
 }
