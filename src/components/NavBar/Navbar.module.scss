@@ -17,13 +17,12 @@
     display: flex;
     list-style-type: none;
     .Itemlist {
-      padding: 1.8em 1em;
+      padding: 0 1em;
       display: list-item;
       cursor: pointer;
       color: #fff;
-      border-bottom: 1px solid #fff;
       &:hover {
-        transition: border-bottom 0.3s linear;
+        transition: color 0.1s linear;
         color: #eaa053;
       }
       &:active {

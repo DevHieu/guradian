@@ -1,22 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Navbar.module.scss";
 import logo from "../../img/logo.png";
 import { MdAccountCircle } from "react-icons/md";
 
 export default function NavBar() {
-  const logoClick = () => {
-    window.location.reload();
-  };
-
   return (
     <div>
       <div className={styles.wrapper}>
-        <img
-          src={logo}
-          alt="logo"
-          className={styles.logo}
-          onClick={logoClick}
-        />
+        <Link to="/">
+          <img src={logo} alt="logo" className={styles.logo} />
+        </Link>
         <ul className={styles.list}>
           <li className={`${styles.Itemlist} ${styles.active}`}>Cốt truyện</li>
           <li className={styles.Itemlist}>Tin tức</li>

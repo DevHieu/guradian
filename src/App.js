@@ -1,25 +1,16 @@
 import "./App.css";
-import Header from "./components/Header/Header.js";
-import NavBar from "./components/NavBar/NavBar.js";
-import TrailerVideo from "./components/TrailerVideo/TrailerVideo.js";
-import Description from "./components/Description/Description.js";
-import Story from "./components/Story/Story.js";
-import CharSkill from "./components/CharSkill/CharSkill.js";
-import Guild from "./components/Guild/Guild.js";
-import Footer from "./components/Footer/Footer.js";
+import { Routes, Route } from "react-router-dom";
+import Main from "./pages/MainPage/Main.js";
+import Admin from "./pages/AdminPage/Admin.js";
+import DetailedContentPage from "./pages/DetailedContentPage/DetailedContentPage.js";
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <Header />
-      <TrailerVideo />
-      <Story />
-      <CharSkill />
-      <Guild />
-      <Footer />
-      <Description />
-    </div>
+    <Routes>
+      <Route path="/" element={<Main />} />
+      <Route path="/admin" element={<Admin />} />
+      <Route path="/detail" element={<DetailedContentPage />} />
+    </Routes>
   );
 }
 

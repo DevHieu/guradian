@@ -5,7 +5,23 @@
 .nav {
   margin: 0 1em;
 } */
-
+.desImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+.desContent {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  margin-right: 3em;
+  height: calc(1.3rem * 15);
+  overflow: hidden;
+  text-align: left;
+  border: 3px solid white;
+  padding: 10px;
+}
 .slick-slider {
   width: auto;
 }
@@ -14,19 +30,19 @@
   justify-content: space-around;
   align-items: center;
 }
-.slide-container > div {
+/* .slide-container > div {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 60%;
-}
+} */
 .slide-container > div > img {
   width: 80%;
 }
-.slide-container > p {
+/* .slide-container > p {
   width: 40%;
   margin-right: 3em;
-}
+} */
 .slideArrow {
   display: flex;
   justify-content: center;

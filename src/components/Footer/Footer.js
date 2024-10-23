@@ -3,6 +3,7 @@ import styles from "./Footer.module.scss";
 import GameLogo from "../../img/logo.png";
 import company from "../../img/CompanyLogo.png";
 import Warning from "../../img/ESRB_Adults_Only_18+.png";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -44,7 +45,11 @@ export default function Footer() {
         Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic
         Online Services are trademarks and/or registered trademarks of Epic
         Games. All other trademarks are the property of their respective owners.
+        <Link to="/admin" className={styles.admin}>
+          for admin
+        </Link>
       </span>
+
       <img src={company} alt="company's logo" className={styles.company} />
     </div>
   );

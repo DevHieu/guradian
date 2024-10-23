@@ -1,0 +1,16 @@
+.button {
+  margin: 10px;
+  background: #333;
+  color: white;
+  padding: 20px 25px;
+  border: 1px solid #f09433;
+  font-size: 16px;
+  font-weight: 600;
+  &:hover {
+    background: #222;
+    border: 1px solid #f98f1e;
+  }
+}
+.actionWrapper {
+  margin-top: 5em;
+}
