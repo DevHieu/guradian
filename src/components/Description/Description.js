@@ -10,9 +10,11 @@ import axios from "axios";
 
 export default function SimpleSlider() {
   const part = "description";
-  const Server_URL = process.env.SER_URL;
+  const Server_URL = process.env.REACT_APP_SER_URL;
   const [getData, setGetData] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  console.log(Server_URL);
 
   useEffect(() => {
     const fetchData = async () => {

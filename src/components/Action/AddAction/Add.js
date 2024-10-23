@@ -8,7 +8,7 @@ export default function Add() {
   const [content, setContent] = useState("");
   const [image, setImage] = useState("");
 
-  const Server_URL = process.env.SER_URL;
+  const Server_URL = process.env.REACT_APP_SER_URL;
   //Convert img to base64 string to stored image in database
   const converBase64 = (e) => {
     const file = e.target.files[0];
