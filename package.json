@@ -47,6 +47,7 @@
     ]
   },
   "devDependencies": {
-    "image-webpack-loader": "^8.1.0"
+    "image-webpack-loader": "^8.1.0",
+    "patch-package": "^8.0.0"
   }
 }
